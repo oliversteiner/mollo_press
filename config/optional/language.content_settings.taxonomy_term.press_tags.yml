@@ -1,0 +1,16 @@
+uuid: 5311e1fa-3434-414f-a204-da71bb570e2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.press_tags
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.press_tags
+target_entity_type_id: taxonomy_term
+target_bundle: press_tags
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,19 @@
+uuid: 504c8f16-dc9c-40d2-9348-6e49acc8ee14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_author
+    - node.type.mollo_press
+id: node.mollo_press.field_mollo_author
+field_name: field_mollo_author
+entity_type: node
+bundle: mollo_press
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,49 @@
+uuid: 2bb96a0a-8eaa-497a-81a9-cdffef0f475d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mollo_press.body
+    - field.field.node.mollo_press.field_mollo_author
+    - field.field.node.mollo_press.field_mollo_copyright
+    - field.field.node.mollo_press.field_mollo_event
+    - field.field.node.mollo_press.field_mollo_files
+    - field.field.node.mollo_press.field_mollo_internal
+    - field.field.node.mollo_press.field_mollo_links
+    - field.field.node.mollo_press.field_mollo_media
+    - field.field.node.mollo_press.field_mollo_release_date
+    - field.field.node.mollo_press.field_mollo_tags
+    - node.type.mollo_press
+  module:
+    - text
+    - user
+id: node.mollo_press.teaser
+targetEntityType: node
+bundle: mollo_press
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_mollo_author: true
+  field_mollo_copyright: true
+  field_mollo_event: true
+  field_mollo_files: true
+  field_mollo_internal: true
+  field_mollo_links: true
+  field_mollo_media: true
+  field_mollo_release_date: true
+  field_mollo_tags: true
+  langcode: true
