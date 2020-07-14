@@ -1,0 +1,11 @@
+name: 'Press'
+type: module
+description: 'Press Module for Mollo Events'
+core_version_requirement: ^8 || ^9
+package: 'Mollo'
+dependencies:
+  - drupal:node
+  - field_group
+  - auto_entitylabel
+  - views_admintools
+  - pathauto

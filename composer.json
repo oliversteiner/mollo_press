@@ -1,18 +1,20 @@
 {
-  "name": "drupal/mollo_modultemplate",
+  "name": "drupal/mollo_press",
   "type": "drupal-module",
   "license": "GPL-3.0+",
-  "description": "Template for Drupal Mollo Modules",
+  "description": "Drupal Module News for Mollo Events",
   "keywords": [
     "drupal",
     "mollo",
-    "template"
+    "news",
+    "events",
+    "mollo"
   ],
-  "homepage": "https://github.com/oliversteiner/mollo_modultemplate",
+  "homepage": "https://github.com/oliversteiner/mollo_press",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://github.com/oliversteiner/mollo_modultemplate/issues",
-    "source": "https://github.com/oliversteiner/mollo_modultemplate"
+    "issues": "https://github.com/oliversteiner/mollo_press/issues",
+    "source": "https://github.com/oliversteiner/mollo_press"
   },
   "require": {}
 }
