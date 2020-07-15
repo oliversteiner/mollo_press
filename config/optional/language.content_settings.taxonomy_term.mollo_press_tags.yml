@@ -1,0 +1,16 @@
+uuid: a9ceabc1-6c9d-4aae-b167-c8ff03aa4d76
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.mollo_press_tags
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.mollo_press_tags
+target_entity_type_id: taxonomy_term
+target_bundle: mollo_press_tags
+default_langcode: site_default
+language_alterable: true
