@@ -1,0 +1,21 @@
+uuid: 07853d55-7024-43d7-9a44-d819f3e44bd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_release_date
+    - node.type.mollo_press
+  module:
+    - datetime
+id: node.mollo_press.field_mollo_release_date
+field_name: field_mollo_release_date
+entity_type: node
+bundle: mollo_press
+label: 'Release Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

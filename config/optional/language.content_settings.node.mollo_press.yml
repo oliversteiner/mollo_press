@@ -1,0 +1,11 @@
+uuid: 95bca997-3a93-46f6-a14f-7b2f1c2649ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mollo_press
+id: node.mollo_press
+target_entity_type_id: node
+target_bundle: mollo_press
+default_langcode: site_default
+language_alterable: false

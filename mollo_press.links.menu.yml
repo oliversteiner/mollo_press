@@ -1,0 +1,9 @@
+
+#
+# Content > Press
+#
+mollo_press.main:
+  title: 'Press'
+  description: 'List of Press Articles'
+  route_name: mollo_press.list
+  parent: 'system.admin_content'

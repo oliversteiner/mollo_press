@@ -1,0 +1,29 @@
+uuid: 1e129c1b-d9d7-4b97-8f30-3af97c579d7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_tags
+    - node.type.mollo_press
+    - taxonomy.vocabulary.mollo_press_tags
+id: node.mollo_press.field_mollo_tags
+field_name: field_mollo_tags
+entity_type: node
+bundle: mollo_press
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      mollo_press_tags: mollo_press_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: press_tags
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 78ebabe3-46dc-4c24-b6c9-eb77c56b9024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_internal
+    - node.type.mollo_press
+id: node.mollo_press.field_mollo_internal
+field_name: field_mollo_internal
+entity_type: node
+bundle: mollo_press
+label: Internal
+description: 'Only for Members'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

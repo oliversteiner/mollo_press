@@ -1,0 +1,22 @@
+uuid: d3832fb0-596c-4ea0-a888-4cd33b75cee0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: mollo_press
+label: 'Mollo Press'
+type: 'canonical_entities:node'
+pattern: '/press/[node:title]'
+selection_criteria:
+  897ce5cd-ac5a-4a57-a41f-48b5b9d39753:
+    id: node_type
+    bundles:
+      mollo_press: mollo_press
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 897ce5cd-ac5a-4a57-a41f-48b5b9d39753
+selection_logic: and
+weight: -5
+relationships: {  }

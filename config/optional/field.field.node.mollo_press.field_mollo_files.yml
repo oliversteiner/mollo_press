@@ -1,0 +1,27 @@
+uuid: 889b5b44-378c-4e64-81e2-0f37a4854e96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mollo_files
+    - node.type.mollo_press
+  module:
+    - file
+id: node.mollo_press.field_mollo_files
+field_name: field_mollo_files
+entity_type: node
+bundle: mollo_press
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'press/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: 20MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

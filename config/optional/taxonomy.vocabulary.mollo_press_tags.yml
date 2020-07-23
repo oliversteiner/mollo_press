@@ -1,0 +1,8 @@
+uuid: d904d014-bd51-446e-b242-21f55079879f
+langcode: und
+status: true
+dependencies: {  }
+name: 'Press Tags'
+vid: mollo_press_tags
+description: Mollo
+weight: 0

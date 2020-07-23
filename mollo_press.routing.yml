@@ -1,0 +1,9 @@
+#
+# View Press
+#
+mollo_press.list:
+  path: '/admin/press/list'
+  defaults:
+    _title: 'Press'
+  requirements:
+    _permission: 'administer content'
