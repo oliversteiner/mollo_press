@@ -55,6 +55,7 @@ function mollo_press_form_alter(&$form, &$form_state, $form_id)
 
       if (isset($value)) {
         $options[$value] = $value;
+        $options_id[$nid] = $value;
       }
     }
 
@@ -63,5 +64,11 @@ function mollo_press_form_alter(&$form, &$form_state, $form_id)
       $form['event']['#options'] = $options;
       $form['event']['#size'] = 1;
     }
+
+    elseif (isset($form['test'])) {
+      $form['event']['#type'] = 'select';
+      $form['event']['#options'] = $options_id;
+      $form['event']['#size'] = 1;
+    }else{}
   }
 }
