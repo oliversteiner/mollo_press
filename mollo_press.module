@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\mollo_utils\Utility\ViewFilter;
 use Drupal\node\Entity\Node;
 
 /**
@@ -43,28 +44,6 @@ function mollo_press_form_alter(&$form, &$form_state, $form_id) {
     $form['#id'] === 'views-exposed-form-mollo-press-visitor-list'
 
   ) {
-
-
-    $nids = \Drupal::entityQuery('node')
-      ->condition('type', 'mollo_event')
-      ->execute();
-    $nodes = Node::loadMultiple($nids);
-    $options_id = ['' => '-- Alle --']; // TODO Add Translation
-
-    foreach ($nodes as $key => $node) {
-      $value = $node->get('field_mollo_name')->getString();
-      $nid = $node->id();
-
-      if (isset($value)) {
-        $options_id[$nid] = $value;
-      }
-    }
-
-    if (isset($form['event'])) {
-      $form['event']['#type'] = 'select';
-      $form['event']['#options'] = $options_id;
-      $form['event']['#size'] = 1;
-    }
-
+    $form = ViewFilter::filter_mollo_event($form);
   }
 }
